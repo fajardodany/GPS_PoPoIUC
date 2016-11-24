@@ -27,7 +27,7 @@
         android:layout_weight="2"/>
 
     <ImageView
-        android:src="@mipmap/android_test"
+        android:src="@mipmap/carros"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imagePoPo"
