@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <decimal name="A2007_1_1995">17.87</decimal>
+    <decimal name="A2007_1_1990">11.27</decimal>
+    <decimal name="A2007_1_1981">7.91</decimal>
+    <decimal name="A2007_2_1995">35.87</decimal>
+    <decimal name="A2007_2_1990">20.16</decimal>
+    <decimal name="A2007_2_1981">11.27</decimal>
+    <decimal name="A2007_3_1995">56.03</decimal>
+    <decimal name="A2007_3_1990">31.32</decimal>
+    <decimal name="A2007_3_1981">15.71</decimal>
+    <decimal name="A2007_4_1995">142.17</decimal>
+    <decimal name="A2007_4_1990">74.99</decimal>
+    <decimal name="A2007_4_1981">32.41</decimal>
+    <decimal name="A2007_5_1995">258.17</decimal>
+    <decimal name="A2007_5_1981">140.59</decimal>
+    <decimal name="A2007_5_1990">71.59</decimal>
+    <decimal name="A2007_6_1995">459.98</decimal>
+    <decimal name="A2007_6_1990">236.29</decimal>
+    <decimal name="A2007_6_1981">108.57</decimal>
+
+
+    <decimal name="A2007_add_1_1995">3.14</decimal>
+    <decimal name="A2007_add_1_1990">1.98</decimal>
+    <decimal name="A2007_add_1_1981">1.39</decimal>
+    <decimal name="A2007_add_2_1995">6.31</decimal>
+    <decimal name="A2007_add_2_1990">3.55</decimal>
+    <decimal name="A2007_add_2_1981">1.98</decimal>
+    <decimal name="A2007_add_3_1995">9.86</decimal>
+    <decimal name="A2007_add_3_1990">5.51</decimal>
+    <decimal name="A2007_add_3_1981">2.76</decimal>
+    <decimal name="A2007_add_4_1995">25.01</decimal>
+    <decimal name="A2007_add_4_1990">13.19</decimal>
+    <decimal name="A2007_add_4_1981">5.70</decimal>
+
+
+
+
+
+
+
+
+</resources>
