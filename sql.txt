@@ -1,0 +1,4 @@
+https://supportindeed.com/phpMyAdmin4/index.php
+
+user:2251120_popoiuc
+pass: popoiuc123

@@ -1,49 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    v
 
 
-    <decimal name="A2007_add_1_1995">3.14</decimal>
-    <decimal name="A2007_add_1_1990">1.98</decimal>
-    <decimal name="A2007_add_1_1981">1.39</decimal>
-    <decimal name="A2007_add_2_1995">6.31</decimal>
-    <decimal name="A2007_add_2_1990">3.55</decimal>
-    <decimal name="A2007_add_2_1981">1.98</decimal>
-    <decimal name="A2007_add_3_1995">9.86</decimal>
-    <decimal name="A2007_add_3_1990">5.51</decimal>
-    <decimal name="A2007_add_3_1981">2.76</decimal>
-    <decimal name="A2007_add_4_1995">25.01</decimal>
-    <decimal name="A2007_add_4_1990">13.19</decimal>
-    <decimal name="A2007_add_4_1981">5.70</decimal>
+    <string name="A2007_add_1_1995">3.14</string>
+    <string name="A2007_add_1_1990">1.98</string>
+    <string name="A2007_add_1_1981">1.39</string>
+    <string name="A2007_add_2_1995">6.31</string>
+    <string name="A2007_add_2_1990">3.55</string>
+    <string name="A2007_add_2_1981">1.98</string>
+    <string name="A2007_add_3_1995">9.86</string>
+    <string name="A2007_add_3_1990">5.51</string>
+    <string name="A2007_add_3_1981">2.76</string>
+    <string name="A2007_add_4_1995">25.01</string>
+    <string name="A2007_add_4_1990">13.19</string>
+    <string name="A2007_add_4_1981">5.70</string>
 
-    <decimal name="P2007_1">28.52</decimal>
-    <decimal name="P2007_2">57.23</decimal>
-    <decimal name="P2007_3">114.36</decimal>
-    <decimal name="P2007_4">391.38</decimal>
-    <decimal name="P2007_1_co2">58.51</decimal>
-    <decimal name="P2007_2_co2">87.68</decimal>
-    <decimal name="P2007_3_co2">190.41</decimal>
-    <decimal name="P2007_4_co2">326.19</decimal>
+    <string name="P2007_1">28.52</string>
+    <string name="P2007_2">57.23</string>
+    <string name="P2007_3">114.36</string>
+    <string name="P2007_4">391.38</string>
+    <string name="P2007_1_co2">58.51</string>
+    <string name="P2007_2_co2">87.68</string>
+    <string name="P2007_3_co2">190.41</string>
+    <string name="P2007_4_co2">326.19</string>
 
-    <decimal name="I2007_1">38.08</decimal>
-    <decimal name="I2007_2">65.24</decimal>
+    <string name="I2007_1">38.08</string>
+    <string name="I2007_2">65.24</string>
 
-    <decimal name="P2007_1_gasoleo">5.02</decimal>
-    <decimal name="P2007_2_gasoleo">10.07</decimal>
-    <decimal name="P2007_3_gasoleo">20.12</decimal>
-    <decimal name="P2007_4_gasoleo">68.85</decimal>
+    <string name="P2007_1_gasoleo">5.02</string>
+    <string name="P2007_2_gasoleo">10.07</string>
+    <string name="P2007_3_gasoleo">20.12</string>
+    <string name="P2007_4_gasoleo">68.85</string>
 
-    <decimal name="C2007">1.00</decimal>
-    <decimal name="C2008">1.05</decimal>
-    <decimal name="C2009">1.10</decimal>
-    <decimal name="C2010">1.15</decimal>
-
-
-
-
-
-
-
-
-
+    <string name="C2007">1.00</string>
+    <string name="C2008">1.05</string>
+    <string name="C2009">1.10</string>
+    <string name="C2010">1.15</string>
 </resources>

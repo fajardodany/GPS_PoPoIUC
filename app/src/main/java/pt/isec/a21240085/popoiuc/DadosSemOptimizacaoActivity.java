@@ -1,6 +1,7 @@
 package pt.isec.a21240085.popoiuc;
 
 import android.app.Activity;
+import android.content.res.XmlResourceParser;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.renderscript.Sampler;
@@ -43,10 +44,11 @@ public class DadosSemOptimizacaoActivity extends Activity {
         } catch(NumberFormatException nfe) {
             Toast.makeText(this, "Erro na passagem de valores", Toast.LENGTH_SHORT).show();
         }
+
         if(ano_c<1989){
 
+            resultado=Double.parseDouble(getString(R.string.A2007_add_1_1981));
+            Toast.makeText(this,"resultado:"+resultado,Toast.LENGTH_SHORT).show();
         }
-
-
     }
 }
