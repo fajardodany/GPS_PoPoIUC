@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <decimal name="A2007_1_1995">17.87</decimal>
-    <decimal name="A2007_1_1990">11.27</decimal>
-    <decimal name="A2007_1_1981">7.91</decimal>
-    <decimal name="A2007_2_1995">35.87</decimal>
-    <decimal name="A2007_2_1990">20.16</decimal>
-    <decimal name="A2007_2_1981">11.27</decimal>
-    <decimal name="A2007_3_1995">56.03</decimal>
-    <decimal name="A2007_3_1990">31.32</decimal>
-    <decimal name="A2007_3_1981">15.71</decimal>
-    <decimal name="A2007_4_1995">142.17</decimal>
-    <decimal name="A2007_4_1990">74.99</decimal>
-    <decimal name="A2007_4_1981">32.41</decimal>
-    <decimal name="A2007_5_1995">258.17</decimal>
-    <decimal name="A2007_5_1981">140.59</decimal>
-    <decimal name="A2007_5_1990">71.59</decimal>
-    <decimal name="A2007_6_1995">459.98</decimal>
-    <decimal name="A2007_6_1990">236.29</decimal>
-    <decimal name="A2007_6_1981">108.57</decimal>
+    v
 
 
     <decimal name="A2007_add_1_1995">3.14</decimal>
@@ -32,6 +15,29 @@
     <decimal name="A2007_add_4_1995">25.01</decimal>
     <decimal name="A2007_add_4_1990">13.19</decimal>
     <decimal name="A2007_add_4_1981">5.70</decimal>
+
+    <decimal name="P2007_1">28.52</decimal>
+    <decimal name="P2007_2">57.23</decimal>
+    <decimal name="P2007_3">114.36</decimal>
+    <decimal name="P2007_4">391.38</decimal>
+    <decimal name="P2007_1_co2">58.51</decimal>
+    <decimal name="P2007_2_co2">87.68</decimal>
+    <decimal name="P2007_3_co2">190.41</decimal>
+    <decimal name="P2007_4_co2">326.19</decimal>
+
+    <decimal name="I2007_1">38.08</decimal>
+    <decimal name="I2007_2">65.24</decimal>
+
+    <decimal name="P2007_1_gasoleo">5.02</decimal>
+    <decimal name="P2007_2_gasoleo">10.07</decimal>
+    <decimal name="P2007_3_gasoleo">20.12</decimal>
+    <decimal name="P2007_4_gasoleo">68.85</decimal>
+
+    <decimal name="C2007">1.00</decimal>
+    <decimal name="C2008">1.05</decimal>
+    <decimal name="C2009">1.10</decimal>
+    <decimal name="C2010">1.15</decimal>
+
 
 
 
