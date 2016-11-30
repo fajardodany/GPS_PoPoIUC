@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="A2007_1_1995">17.87</string>
+    <string name="A2007_1_1990">11.27</string>
+    <string name="A2007_1_1981">7.91</string>
+    <string name="A2007_2_1995">35.87</string>
+    <string name="A2007_2_1990">20.16</string>
+    <string name="A2007_2_1981">11.27</string>
+    <string name="A2007_3_1995">56.03</string>
+    <string name="A2007_3_1990">31.32</string>
+    <string name="A2007_3_1981">15.71</string>
+    <string name="A2007_4_1995">142.17</string>
+    <string name="A2007_4_1990">74.99</string>
+    <string name="A2007_4_1981">32.41</string>
+    <string name="A2007_5_1995">258.17</string>
+    <string name="A2007_5_1990">140.59</string>
+    <string name="A2007_5_1981">71.59</string>
+    <string name="A2007_6_1995">459.98</string>
+    <string name="A2007_6_1990">236.29</string>
+    <string name="A2007_6_1981">108.57</string>
 
     <string name="A2007_add_1_1995">3.14</string>
     <string name="A2007_add_1_1990">1.98</string>

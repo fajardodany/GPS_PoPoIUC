@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PoPoIUC</string>
+    <string-array name="Combustivel">
+        <item>Gasolina</item>
+        <item>Gásoleo</item>
+        <item>GPL</item>
+    </string-array>
+
 </resources>
