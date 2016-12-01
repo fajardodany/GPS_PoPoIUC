@@ -32,7 +32,7 @@ public class DadosSemOptimizacaoActivity extends Activity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         combustivel.setAdapter(adapter);
     }
-    protected void calcular(View v){
+    protected void calcular_(View v){
 
         int ano_c=0,cilindrada_c=0,co2_c=0,combustivel_c=-1;
         moduloCalculo calculos;
@@ -50,27 +50,27 @@ public class DadosSemOptimizacaoActivity extends Activity {
             return;
         }
         try {
-            ano_c = Integer.parseInt(ano.toString());
+            ano_c = Integer.parseInt(ano.getText().toString());
         } catch(NumberFormatException nfe) {
             Toast.makeText(this, "Erro na passagem de valores - Ano", Toast.LENGTH_SHORT).show();
             return;
         }
 
         try {
-            cilindrada_c = Integer.parseInt(cilindrada.toString());
+            cilindrada_c = Integer.parseInt(cilindrada.getText().toString());
         } catch(NumberFormatException nfe) {
             Toast.makeText(this, "Erro na passagem de valores - Cilindrada", Toast.LENGTH_SHORT).show();
             return;
         }
         try {
-            co2_c = Integer.parseInt(co2.toString());
+            co2_c = Integer.parseInt(co2.getText().toString());
         } catch(NumberFormatException nfe) {
             Toast.makeText(this, "Erro na passagem de valores - Co2", Toast.LENGTH_SHORT).show();
             return;
         }
         calculos= new moduloCalculo(ano_c,cilindrada_c,co2_c,combustivel_c,this);
         calculos.calcular();
-        Toast.makeText(this, "Resultado: "+calculos.devolve_resultado(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Resultado: "+calculos.getResultado(), Toast.LENGTH_SHORT).show();
         return;
     }
 }
