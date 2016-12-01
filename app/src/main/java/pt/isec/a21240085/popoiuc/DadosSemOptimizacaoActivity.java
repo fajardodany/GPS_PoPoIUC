@@ -12,6 +12,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Calendar;
+
 public class DadosSemOptimizacaoActivity extends Activity {
 
     EditText ano,cilindrada,co2;
@@ -37,6 +39,7 @@ public class DadosSemOptimizacaoActivity extends Activity {
         int ano_c=0,cilindrada_c=0,co2_c=0,combustivel_c=-1;
         moduloCalculo calculos;
 
+
         String text = combustivel.getSelectedItem().toString();
         if(text.equals("Gasolina"))
             combustivel_c=0;
@@ -49,23 +52,37 @@ public class DadosSemOptimizacaoActivity extends Activity {
             Toast.makeText(this, "Erro na passagem de valores - Combustivel", Toast.LENGTH_SHORT).show();
             return;
         }
+        Calendar calendar = Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);
+
         try {
+
             ano_c = Integer.parseInt(ano.getText().toString());
         } catch(NumberFormatException nfe) {
             Toast.makeText(this, "Erro na passagem de valores - Ano", Toast.LENGTH_SHORT).show();
             return;
         }
-
+        if(ano_c<1981 && ano_c>year){
+            Toast.makeText(this, "Introduza um ano válido pfv", Toast.LENGTH_SHORT).show();
+        }
         try {
             cilindrada_c = Integer.parseInt(cilindrada.getText().toString());
         } catch(NumberFormatException nfe) {
             Toast.makeText(this, "Erro na passagem de valores - Cilindrada", Toast.LENGTH_SHORT).show();
             return;
         }
+        if(cilindrada_c<0){
+            Toast.makeText(this, "Introduza uma cilindrada válida pfv", Toast.LENGTH_SHORT).show();
+            return;
+        }
         try {
             co2_c = Integer.parseInt(co2.getText().toString());
         } catch(NumberFormatException nfe) {
             Toast.makeText(this, "Erro na passagem de valores - Co2", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(co2_c<0){
+            Toast.makeText(this, "Introduza um valor de Co2 válido pfv", Toast.LENGTH_SHORT).show();
             return;
         }
         calculos= new moduloCalculo(ano_c,cilindrada_c,co2_c,combustivel_c,this);
