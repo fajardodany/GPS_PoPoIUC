@@ -62,8 +62,9 @@ public class DadosSemOptimizacaoActivity extends Activity {
             Toast.makeText(this, "Erro na passagem de valores - Ano", Toast.LENGTH_SHORT).show();
             return;
         }
-        if(ano_c<1981 && ano_c>year){
+        if(ano_c<1981 || ano_c>year){
             Toast.makeText(this, "Introduza um ano válido pfv", Toast.LENGTH_SHORT).show();
+            return;
         }
         try {
             cilindrada_c = Integer.parseInt(cilindrada.getText().toString());
