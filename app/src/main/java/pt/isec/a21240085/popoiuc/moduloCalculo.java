@@ -49,7 +49,6 @@ public class moduloCalculo extends ContextWrapper{
     public void setCombustivel(int combustivel){
         combustivel_c=combustivel;
     }
-
     public double getResultado(){
         return resultado;
     }
