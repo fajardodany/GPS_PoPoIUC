@@ -56,7 +56,6 @@ public class DadosSemOptimizacaoActivity extends Activity {
         int year = calendar.get(Calendar.YEAR);
 
         try {
-
             ano_c = Integer.parseInt(ano.getText().toString());
         } catch(NumberFormatException nfe) {
             Toast.makeText(this, "Erro na passagem de valores - Ano", Toast.LENGTH_SHORT).show();
@@ -86,7 +85,13 @@ public class DadosSemOptimizacaoActivity extends Activity {
             Toast.makeText(this, "Introduza um valor de Co2 válido pfv", Toast.LENGTH_SHORT).show();
             return;
         }
-        calculos= new moduloCalculo(ano_c,cilindrada_c,co2_c,combustivel_c,this);
+        try {
+            calculos= new moduloCalculo(ano_c,cilindrada_c,co2_c,combustivel_c,this);
+        } catch(IllegalArgumentException e) {
+            Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         calculos.calcular();
         Toast.makeText(this, "Resultado: "+calculos.getResultado(), Toast.LENGTH_SHORT).show();
         return;
