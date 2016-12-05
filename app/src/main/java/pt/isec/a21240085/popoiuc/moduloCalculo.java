@@ -3,6 +3,7 @@ package pt.isec.a21240085.popoiuc;
 
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.util.Log;
 
 import java.util.Calendar;
 
@@ -109,25 +110,31 @@ public class moduloCalculo extends ContextWrapper {
             {
                 try {
                     resultado += Double.parseDouble(getString(R.string.P2007_1));
+
                 } catch (NumberFormatException ex) {
+                    Log.e("ModuloCalculo", "P2007_1= " + ex.toString());
                 }
             } else if (cilindrada_c <= 1750)//Mais de 1.250cm3 até 1750cm3
             {
                 try {
                     resultado += Double.parseDouble(getString(R.string.P2007_2));
+
                 } catch (NumberFormatException ex) {
+                    Log.e("ModuloCalculo", "P2007_2= " + ex.toString());
                 }
             } else if (cilindrada_c <= 2500)//Mais de 1.700cm3 até 2.500cm3
             {
                 try {
                     resultado += Double.parseDouble(getString(R.string.P2007_3));
                 } catch (NumberFormatException ex) {
+                    Log.e("ModuloCalculo", "P2007_3= " + ex.toString());
                 }
             } else if (cilindrada_c > 2500)//Mais de 2.500cm3
             {
                 try {
                     resultado += Double.parseDouble(getString(R.string.P2007_4));
                 } catch (NumberFormatException ex) {
+                    Log.e("ModuloCalculo", "P2007_4= " + ex.toString());
                 }
             }
 
@@ -137,24 +144,28 @@ public class moduloCalculo extends ContextWrapper {
                 try {
                     resultado += Double.parseDouble(getString(R.string.P2007_1_co2));
                 } catch (NumberFormatException ex) {
+                    Log.e("ModuloCalculo", "P2007_1_co2= " + ex.toString());
                 }
             } else if (co2_c <= 180)//Mais de 120g/km até 180g/km
             {
                 try {
                     resultado += Double.parseDouble(getString(R.string.P2007_2_co2));
                 } catch (NumberFormatException ex) {
+                    Log.e("ModuloCalculo", "P2007_2_co2= " + ex.toString());
                 }
             } else if (co2_c <= 250)//Mais de 180g/km até 250g/km
             {
                 try {
                     resultado += Double.parseDouble(getString(R.string.P2007_3_co2));
                 } catch (NumberFormatException ex) {
+                    Log.e("ModuloCalculo", "P2007_3_co2= " + ex.toString());
                 }
             } else if (co2_c > 250)//Mais de 250g/km
             {
                 try {
                     resultado += Double.parseDouble(getString(R.string.P2007_4_co2));
                 } catch (NumberFormatException ex) {
+                    Log.e("ModuloCalculo", "P2007_4_co2= " + ex.toString());
                 }
             }
             /*Segundo a Tabela 2 do Documento de Apoio ao Módulo de Cáculo*/
@@ -165,24 +176,28 @@ public class moduloCalculo extends ContextWrapper {
                     try {
                         resultado += Double.parseDouble(getString(R.string.P2007_1_gasoleo));
                     } catch (NumberFormatException ex) {
+                        Log.e("ModuloCalculo", "P2007_1_gasoleo= " + ex.toString());
                     }
                 } else if (cilindrada_c <= 1750)//Mais de 1.250cm3 até 1750cm3
                 {
                     try {
                         resultado += Double.parseDouble(getString(R.string.P2007_2_gasoleo));
                     } catch (NumberFormatException ex) {
+                        Log.e("ModuloCalculo", "P2007_2_gasoleo= " + ex.toString());
                     }
                 } else if (cilindrada_c <= 2500)//Mais de 1.700cm3 até 2.500cm3
                 {
                     try {
                         resultado += Double.parseDouble(getString(R.string.P2007_3_gasoleo));
                     } catch (NumberFormatException ex) {
+                        Log.e("ModuloCalculo", "P2007_3_gasoleo= " + ex.toString());
                     }
                 } else if (cilindrada_c > 2500)//Mais de 2.500cm3
                 {
                     try {
                         resultado += Double.parseDouble(getString(R.string.P2007_4_gasoleo));
                     } catch (NumberFormatException ex) {
+                        Log.e("ModuloCalculo", "P2007_4_gasoleo= " + ex.toString());
                     }
                 }
 
@@ -193,6 +208,7 @@ public class moduloCalculo extends ContextWrapper {
                     try {
                         resultado *= Double.parseDouble(getString(R.string.C2007));
                     } catch (NumberFormatException ex) {
+                        Log.e("ModuloCalculo", "C2007= " + ex.toString());
                     }
                     break;
                 }
@@ -200,6 +216,7 @@ public class moduloCalculo extends ContextWrapper {
                     try {
                         resultado *= Double.parseDouble(getString(R.string.C2008));
                     } catch (NumberFormatException ex) {
+                        Log.e("ModuloCalculo", "C2008= " + ex.toString());
                     }
                     break;
                 }
@@ -207,6 +224,7 @@ public class moduloCalculo extends ContextWrapper {
                     try {
                         resultado *= Double.parseDouble(getString(R.string.C2009));
                     } catch (NumberFormatException ex) {
+                        Log.e("ModuloCalculo", "C2009= " + ex.toString());
                     }
                     break;
                 }
@@ -214,6 +232,7 @@ public class moduloCalculo extends ContextWrapper {
                     try {
                         resultado *= Double.parseDouble(getString(R.string.C2010));
                     } catch (NumberFormatException ex) {
+                        Log.e("ModuloCalculo", "C2010= " + ex.toString());
                     }
                 }
                 default:
@@ -230,6 +249,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_1_1981));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_1_1981= " + ex.toString());
                             }
                         }
                     } else if (ano_c <= 1995) {//De 1990 a 1995
@@ -237,6 +257,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_1_1990));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_1_1990= " + ex.toString());
                             }
                         }
                     } else if (ano_c > 1995) {//Posterior a 1995
@@ -244,6 +265,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_1_1995));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_1_1995= " + ex.toString());
                             }
                         }
                     }
@@ -253,6 +275,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_2_1981));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_2_1981= " + ex.toString());
                             }
                         }
                     } else if (ano_c <= 1995) {//De 1990 a 1995
@@ -260,6 +283,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_2_1990));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_2_1990= " + ex.toString());
                             }
                         }
                     } else if (ano_c > 1995) {//Posterior a 1995
@@ -267,6 +291,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_2_1995));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_2_1995= " + ex.toString());
                             }
                         }
                     }
@@ -276,6 +301,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_3_1981));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_3_1981= " + ex.toString());
                             }
                         }
                     } else if (ano_c <= 1995) {//De 1990 a 1995
@@ -283,6 +309,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_3_1990));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_3_1990= " + ex.toString());
                             }
                         }
                     } else if (ano_c > 1995) {//Posterior a 1995
@@ -290,6 +317,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_3_1995));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_3_1995= " + ex.toString());
                             }
                         }
                     }
@@ -299,6 +327,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_4_1981));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_4_1981= " + ex.toString());
                             }
                         }
                     } else if (ano_c <= 1995) {//De 1990 a 1995
@@ -306,6 +335,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_4_1990));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_4_1990= " + ex.toString());
                             }
                         }
                     } else if (ano_c > 1995) {//Posterior a 1995
@@ -313,6 +343,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_4_1995));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_4_1995= " + ex.toString());
                             }
                         }
                     }
@@ -322,6 +353,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_5_1981));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_5_1981= " + ex.toString());
                             }
                         }
                     } else if (ano_c <= 1995) {//De 1990 a 1995
@@ -329,6 +361,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_5_1990));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_5_1990= " + ex.toString());
                             }
                         }
                     } else if (ano_c > 1995) {//Posterior a 1995
@@ -336,6 +369,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_5_1995));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_5_1995= " + ex.toString());
                             }
                         }
                     }
@@ -345,6 +379,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_6_1981));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_6_1981= " + ex.toString());
                             }
                         }
                     } else if (ano_c <= 1995) {//De 1990 a 1995
@@ -352,6 +387,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_6_1990));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_6_1990= " + ex.toString());
                             }
                         }
                     } else if (ano_c > 1995) {//Posterior a 1995
@@ -359,6 +395,7 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_6_1995));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_6_1995= " + ex.toString());
                             }
                         }
                     }
@@ -371,10 +408,12 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_1_1981));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_1_1981= " + ex.toString());
                             }
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_add_1_1981));//Valor Tabela 5
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_add_1_1981= " + ex.toString());
                             }
                         }
                     } else if (ano_c <= 1995) {//De 1990 a 1995
@@ -382,10 +421,12 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_1_1990));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_1_1990= " + ex.toString());
                             }
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_add_1_1990));//Valor Tabela 5
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_add_1_1990= " + ex.toString());
                             }
                         }
                     } else if (ano_c > 1995) {//Posterior a 1995
@@ -393,10 +434,12 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_1_1995));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_1_1995= " + ex.toString());
                             }
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_add_1_1995));//Valor Tabela 5
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_add_1_1995= " + ex.toString());
                             }
                         }
                     }
@@ -406,10 +449,12 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_2_1981));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_2_1981= " + ex.toString());
                             }
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_add_2_1981));//Valor Tabela 5
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_add_2_1981= " + ex.toString());
                             }
                         }
                     } else if (ano_c <= 1995) {//De 1990 a 1995
@@ -417,10 +462,12 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_2_1990));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_2_1990= " + ex.toString());
                             }
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_add_2_1990));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_add_2_1990= " + ex.toString());
                             }
                         }
                     }//Valor Tabela 5
@@ -429,10 +476,12 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_2_1995));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_2_1995= " + ex.toString());
                             }
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_add_2_1995));//Valor Tabela 5
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_add_2_1995= " + ex.toString());
                             }
                         }
                     }
@@ -442,10 +491,12 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_3_1981));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_3_1981= " + ex.toString());
                             }
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_add_3_1981));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_add_3_1981= " + ex.toString());
                             }
                         }
                     }//Valor Tabela 5
@@ -454,10 +505,12 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_3_1990));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_3_1990= " + ex.toString());
                             }
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_add_3_1990));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_add_3_1990= " + ex.toString());
                             }
                         }
                     }//Valor Tabela 5
@@ -466,10 +519,12 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_3_1995));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_3_1995= " + ex.toString());
                             }
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_add_3_1995));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_add_3_1995= " + ex.toString());
                             }
                         }
                     }//Valor Tabela 5
@@ -479,10 +534,12 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_4_1981));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_4_1981= " + ex.toString());
                             }
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_add_4_1981));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_add_4_1981= " + ex.toString());
                             }
                         }
                     }//Valor Tabela 5
@@ -491,10 +548,12 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_4_1990));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_4_1990= " + ex.toString());
                             }
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_add_4_1990));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_add_4_1990= " + ex.toString());
                             }
                         }
                     }//Valor Tabela 5
@@ -503,10 +562,12 @@ public class moduloCalculo extends ContextWrapper {
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_4_1995));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_4_1995= " + ex.toString());
                             }
                             try {
                                 resultado += Double.parseDouble(getString(R.string.A2007_add_4_1995));
                             } catch (NumberFormatException ex) {
+                                Log.e("ModuloCalculo", "A2007_add_4_1995= " + ex.toString());
                             }
                         }
                     }//Valor Tabela 5
