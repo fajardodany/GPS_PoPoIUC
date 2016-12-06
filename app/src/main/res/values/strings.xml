@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">PoPoIUC</string>
+    <string name="ano">Ano</string>
+    <string name="calcular">Calcular</string>
+    <string name="cilindrada">Cilindrada</string>
+    <string name="combust_vel">Combustível</string>
+    <string name="emiss_es_co2">Emissões CO2</string>
+    <string name="cm3">cm3</string>
+    <string name="g_km">g/km</string>
     <string-array name="Combustivel">
         <item>Gasolina</item>
         <item>Gásoleo</item>

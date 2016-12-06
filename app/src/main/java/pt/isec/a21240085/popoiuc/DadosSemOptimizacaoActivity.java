@@ -37,6 +37,7 @@ public class DadosSemOptimizacaoActivity extends Activity {
     }
     protected void calcular_(View v){
 
+
         int ano_c=0,cilindrada_c=0,co2_c=0,combustivel_c=-1;
         moduloCalculo calculos;
 
@@ -95,6 +96,7 @@ public class DadosSemOptimizacaoActivity extends Activity {
 
         calculos.calcular();
         Toast.makeText(this, "Resultado: "+calculos.getResultado(), Toast.LENGTH_SHORT).show();
+
 
         //Intent it = new Intent(this, CalculaIUCActivity.class);
         //it.putExtra("NOME", calculos);

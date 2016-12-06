@@ -11,7 +11,7 @@ import java.util.Calendar;
  * Created by francisco on 29-11-2016.
  */
 
-public class moduloCalculo extends ContextWrapper {
+public class moduloCalculo extends ContextWrapper{
     private double resultado;
     private int ano_c = 0, cilindrada_c = 0, co2_c = 0, combustivel_c;
 
