@@ -4,6 +4,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.ArrayList;
+
 /**
  * Created by francisco on 28-11-2016.
  */
@@ -19,7 +21,18 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
+        /*
+        public ArrayList<Marca> BuscaMarca () {
+            string  = "Select nome From Marcas;";
+            sqLiteDatabase.execSQL(string);
+            SQLiteDatabase.CursorFactory = sqLiteDatabase.rawQuery(string, )
+            ArrayList<Marca> marcas = new ArrayList<Marca>();
 
+
+            return marcas;
+
+
+        }*/
     }
 
     @Override

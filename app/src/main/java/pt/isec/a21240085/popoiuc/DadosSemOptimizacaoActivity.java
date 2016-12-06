@@ -1,6 +1,7 @@
 package pt.isec.a21240085.popoiuc;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.XmlResourceParser;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -94,6 +95,10 @@ public class DadosSemOptimizacaoActivity extends Activity {
 
         calculos.calcular();
         Toast.makeText(this, "Resultado: "+calculos.getResultado(), Toast.LENGTH_SHORT).show();
+
+        //Intent it = new Intent(this, CalculaIUCActivity.class);
+        //it.putExtra("NOME", calculos);
+
         return;
     }
 }

@@ -14,153 +14,148 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
+            android:orientation="vertical"
             android:layout_height="match_parent"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:layout_weight="0.5">
 
             <LinearLayout
-                android:layout_width="match_parent"
                 android:orientation="vertical"
-                android:layout_height="wrap_content"
-                android:weightSum="1"
-                android:layout_weight="2.09">
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="0dp"
                     android:layout_weight="1">
 
-                    <LinearLayout
-                        android:orientation="vertical"
+                    <TextView
+                        android:text="Ano"
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1">
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:id="@+id/textViewAno" />
 
-                        <TextView
-                            android:text="Ano"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="20dp"
-                            android:id="@+id/textViewAno" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:textSize="14dp"
+                        android:id="@+id/editTextAno" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Cilindrada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:id="@+id/textViewCilindrada" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
                         <EditText
-                            android:layout_width="match_parent"
+                            android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:inputType="number"
                             android:ems="10"
                             android:textSize="14dp"
-                            android:id="@+id/editTextAno" />
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1">
+                            android:id="@+id/editTextCilindrada" />
 
                         <TextView
-                            android:text="Cilindrada"
-                            android:layout_width="match_parent"
+                            android:text="cm3"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="20dp"
-                            android:id="@+id/textViewCilindrada" />
+                            android:textSize="16dp"
+                            android:id="@+id/textViewCilindradamedida" />
 
-                        <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <EditText
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:inputType="number"
-                                android:ems="10"
-                                android:textSize="14dp"
-                                android:id="@+id/editTextCilindrada" />
-
-                            <TextView
-                                android:text="cm3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textSize="16dp"
-                                android:id="@+id/textViewCilindradamedida" />
-
-                        </LinearLayout>
                     </LinearLayout>
-
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:text="Combustível"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="20dp"
-                            android:id="@+id/textViewCombustivel" />
-
-                        <Spinner
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/spinnerCombustivel_o" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:text="Emissões CO2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="20dp"
-                            android:id="@+id/textViewCO2" />
-
-                        <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <EditText
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:inputType="number"
-                                android:ems="10"
-                                android:textSize="14dp"
-                                android:id="@+id/editTextCO2" />
-
-                            <TextView
-                                android:text="g/km"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textSize="16dp"
-                                android:id="@+id/textViewCO2medida" />
-
-                        </LinearLayout>
-                    </LinearLayout>
-
                 </LinearLayout>
 
-                <Button
-                    android:text="Calcular"
+                <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="20dp"
-                    android:id="@+id/buttonCalcular"
-                    android:layout_gravity="center"
-                    android:onClick="calcular_"
-                    android:layout_weight="1" />
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Combustível"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:id="@+id/textViewCombustivel" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerCombustivel_o" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Emissões CO2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:id="@+id/textViewCO2" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:textSize="14dp"
+                            android:id="@+id/editTextCO2" />
+
+                        <TextView
+                            android:text="g/km"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:id="@+id/textViewCO2medida" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
             </LinearLayout>
+
+            <Button
+                android:text="Calcular"
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:id="@+id/buttonCalcular"
+                android:layout_gravity="center"
+                android:onClick="calcular_"
+                android:layout_weight="1"
+                android:layout_marginTop="50dp"
+                android:layout_height="match_parent" />
         </LinearLayout>
     </ScrollView>
 
