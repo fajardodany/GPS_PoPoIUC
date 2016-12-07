@@ -95,12 +95,13 @@ public class DadosSemOptimizacaoActivity extends Activity {
         }
 
         calculos.calcular();
-        Toast.makeText(this, "Resultado: "+calculos.getResultado(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Resultado: "+calculos.getResultado(), Toast.LENGTH_SHORT).show();
 
 
-        //Intent it = new Intent(this, CalculaIUCActivity.class);
-        //it.putExtra("NOME", calculos);
 
+        Intent it = new Intent(this, CalculaIUCActivity.class);
+        it.putExtra("intResultado", calculos.getResultado());
+        startActivity(it);
         return;
     }
 }

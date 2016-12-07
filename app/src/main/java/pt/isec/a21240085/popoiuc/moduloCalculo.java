@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.util.Log;
 
+import java.io.Serializable;
 import java.util.Calendar;
 
 /**
@@ -228,14 +229,13 @@ public class moduloCalculo extends ContextWrapper{
                     }
                     break;
                 }
-                case 2010: {
+                default:{
                     try {
                         resultado *= Double.parseDouble(getString(R.string.C2010));
                     } catch (NumberFormatException ex) {
                         Log.e("ModuloCalculo", "C2010= " + ex.toString());
                     }
                 }
-                default:
                     break;
             }
 
