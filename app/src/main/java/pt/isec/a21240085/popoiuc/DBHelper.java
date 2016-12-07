@@ -32,37 +32,26 @@ public class DBHelper extends SQLiteOpenHelper {
         // TODO Auto-generated method stub
     }
 
-    public Cursor getData(int id) {
+    public Cursor getMarcas(){
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor res =  db.rawQuery( "select * from contacts where id="+id+"", null );
+        Cursor res=db.rawQuery("Select * from MARCA",null);
         return res;
     }
-
-    public int numberOfRows(){
-        SQLiteDatabase db = this.getReadableDatabase();
-        int numRows = (int) DatabaseUtils.queryNumEntries(db, TABLE_NAME);
-        return numRows;
+    public Cursor getMotor(){
+        SQLiteDatabase db =this.getReadableDatabase();
+        Cursor res=db.rawQuery("Select * from MOTOR",null);
+        return res;
     }
-
-    public boolean updateContact (Integer id, String name, String phone, String email, String street,String place) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put("name", name);
-        contentValues.put("phone", phone);
-        contentValues.put("email", email);
-        contentValues.put("street", street);
-        contentValues.put("place", place);
-        db.update("contacts", contentValues, "id = ? ", new String[] { Integer.toString(id) } );
-        return true;
+    public Cursor getModelo(){
+        SQLiteDatabase db =this.getReadableDatabase();
+        Cursor res=db.rawQuery("Select * from MODELO",null);
+        return res;
     }
-
-    public Integer deleteContact (Integer id) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete("contacts",
-                "id = ? ",
-                new String[] { Integer.toString(id) });
+    public Cursor getCarro(){
+        SQLiteDatabase db =this.getReadableDatabase();
+        Cursor res=db.rawQuery("Select * from CARRO",null);
+        return res;
     }
-
     public ArrayList<String> getAllCotacts() {
         ArrayList<String> array_list = new ArrayList<String>();
 
