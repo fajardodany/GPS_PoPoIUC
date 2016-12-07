@@ -12,8 +12,7 @@ import java.util.ArrayList;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "popoIUC.db";
-    public static final String CONTACTS_TABLE_NAME = "contacts";
+    public static final String DATABASE_NAME = "popoIuc.db";
 
     public DBHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -21,18 +20,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        /*
-        public ArrayList<Marca> BuscaMarca () {
-            string  = "Select nome From Marcas;";
-            sqLiteDatabase.execSQL(string);
-            SQLiteDatabase.CursorFactory = sqLiteDatabase.rawQuery(string, )
-            ArrayList<Marca> marcas = new ArrayList<Marca>();
-
-
-            return marcas;
-
-
-        }*/
+        
     }
 
     @Override
