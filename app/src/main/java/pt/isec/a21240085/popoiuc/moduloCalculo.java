@@ -28,26 +28,32 @@ public class moduloCalculo extends ContextWrapper{
             code = false;
             throw new IllegalArgumentException("Ano fora dos parametros aceitaveis");
         }
-        if (!(cilindrada < 0)) {
-            cilindrada_c = cilindrada;
-            code = true;
-        } else {
-            code = false;
-            throw new IllegalArgumentException("Cilindrada fora dos parametros aceitaveis");
-        }
-        if (!(co2 < 0)) {
-            co2_c = co2;
-            code = true;
-        } else {
-            code = false;
-            throw new IllegalArgumentException("CO2 fora dos parametros aceitaveis");
-        }
-        if (!(combustivel <= 0 && combustivel >= 2)) {
-            combustivel_c = combustivel;
-            code = true;
-        } else {
-            code = false;
-            throw new IllegalArgumentException("Valor do Combustivel fora dos parametros aceitaveis");
+        if(code == true) {
+            if (!(cilindrada < 0)) {
+                cilindrada_c = cilindrada;
+                code = true;
+            } else {
+                code = false;
+                throw new IllegalArgumentException("Cilindrada fora dos parametros aceitaveis");
+            }
+            if(code == true) {
+                if (!(co2 < 0)) {
+                    co2_c = co2;
+                    code = true;
+                } else {
+                    code = false;
+                    throw new IllegalArgumentException("CO2 fora dos parametros aceitaveis");
+                }
+                if(code == true) {
+                    if (!(combustivel < 0 || combustivel > 2)) {
+                        combustivel_c = combustivel;
+                        code = true;
+                    } else {
+                        code = false;
+                        throw new IllegalArgumentException("Valor do Combustivel fora dos parametros aceitaveis");
+                    }
+                }
+            }
         }
     }
 

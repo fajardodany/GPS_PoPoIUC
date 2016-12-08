@@ -20,28 +20,106 @@ import static org.junit.Assert.*;
 
 @RunWith(AndroidJUnit4.class)
 public class TestesUnitarios {
-    //Testar se o ano não é compatível
+    //Testar se o ano não é compatível (< 1981)
     @Test
-    public void ano_nao_compativel() throws Exception{
+    public void teste1() throws Exception{
         boolean expected = true;
         moduloCalculo m = null;
         Context c = null;
         boolean reality = true;
 
-        m = new moduloCalculo(1980,0,0,0,c);
+        m = new moduloCalculo(1980,1805,102,0,c);
         reality = m.code;
         assertEquals(expected, reality);
     }
 
-    //Testar se o ano é compatível
+    //Testar se o ano é compatível (1981 <= ano <= ano_do_sistema)
     @Test
-    public void ano_compativel() throws Exception{
+    public void teste2() throws Exception{
         boolean expected = true;
         moduloCalculo m = null;
         Context c = null;
         boolean reality = true;
 
-        m = new moduloCalculo(1981,0,0,0,c);
+        m = new moduloCalculo(2004,1200,115,0,c);
+        reality = m.code;
+        assertEquals(expected, reality);
+    }
+
+    //Testar se o ano não é compatível ( > ano_do_sistema)
+    @Test
+    public void teste3() throws Exception{
+        boolean expected = true;
+        moduloCalculo m = null;
+        Context c = null;
+        boolean reality = true;
+
+        m = new moduloCalculo(2036,1200,115,0,c);
+        reality = m.code;
+        assertEquals(expected, reality);
+    }
+
+    //Testar se o ano é compatível + cilindrada errada
+    @Test
+    public void teste4() throws Exception{
+        boolean expected = true;
+        moduloCalculo m = null;
+        Context c = null;
+        boolean reality = true;
+
+        m = new moduloCalculo(2012,-1,110,0,c);
+        reality = m.code;
+        assertEquals(expected, reality);
+    }
+
+    //Testar se o ano é compatível + cilindrada correta + CO2 errado
+    @Test
+    public void teste5() throws Exception{
+        boolean expected = true;
+        moduloCalculo m = null;
+        Context c = null;
+        boolean reality = true;
+
+        m = new moduloCalculo(2012,1200,-1,0,c);
+        reality = m.code;
+        assertEquals(expected, reality);
+    }
+
+    //Testar se o ano é compatível + cilindrada correta + CO2 correto + combustivel errado
+    @Test
+    public void teste6() throws Exception{
+        boolean expected = true;
+        moduloCalculo m = null;
+        Context c = null;
+        boolean reality = true;
+
+        m = new moduloCalculo(2012,1200,119,3,c);
+        reality = m.code;
+        assertEquals(expected, reality);
+    }
+
+    //Testar se o ano é compatível + cilindrada correta + CO2 correto + combustivel errado
+    @Test
+    public void teste7() throws Exception{
+        boolean expected = true;
+        moduloCalculo m = null;
+        Context c = null;
+        boolean reality = true;
+
+        m = new moduloCalculo(2012,1200,119,-1,c);
+        reality = m.code;
+        assertEquals(expected, reality);
+    }
+
+    //Testar método moduloCalculo tudo correto
+    @Test
+    public void teste8() throws Exception{
+        boolean expected = true;
+        moduloCalculo m = null;
+        Context c = null;
+        boolean reality = true;
+
+        m = new moduloCalculo(2012,1200,119,1,c);
         reality = m.code;
         assertEquals(expected, reality);
     }
