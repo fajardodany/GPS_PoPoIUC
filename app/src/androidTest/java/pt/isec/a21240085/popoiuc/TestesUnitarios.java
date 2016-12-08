@@ -20,6 +20,8 @@ import static org.junit.Assert.*;
 
 @RunWith(AndroidJUnit4.class)
 public class TestesUnitarios {
+    //Class moduloCalculo
+    //método moduloCalculo
     //Testar se o ano não é compatível (< 1981)
     @Test
     public void teste1() throws Exception{
