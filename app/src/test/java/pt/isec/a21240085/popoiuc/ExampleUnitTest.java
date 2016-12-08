@@ -1,6 +1,6 @@
 package pt.isec.a21240085.popoiuc;
 
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.Assert.*;
 

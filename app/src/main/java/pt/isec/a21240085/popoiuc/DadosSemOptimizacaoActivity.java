@@ -88,7 +88,7 @@ public class DadosSemOptimizacaoActivity extends Activity {
             return;
         }
         try {
-            calculos= new moduloCalculo(ano_c,cilindrada_c,co2_c,combustivel_c,this);
+            calculos = new moduloCalculo(ano_c,cilindrada_c,co2_c,combustivel_c,this);
         } catch(IllegalArgumentException e) {
             Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
             return;
