@@ -15,7 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InserirDadosActivity"></activity>
         <activity android:name=".DadosSemOptimizacaoActivity"></activity>
         <activity android:name=".CalculaIUCActivity"></activity>
     </application>
