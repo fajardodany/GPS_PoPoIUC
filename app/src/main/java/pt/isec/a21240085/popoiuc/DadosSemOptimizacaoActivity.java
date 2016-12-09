@@ -36,11 +36,8 @@ public class DadosSemOptimizacaoActivity extends Activity {
         combustivel.setAdapter(adapter);
     }
     protected void calcular_(View v){
-
-
         int ano_c=0,cilindrada_c=0,co2_c=0,combustivel_c=-1;
         moduloCalculo calculos;
-
 
         String text = combustivel.getSelectedItem().toString();
         if(text.equals("Gasolina"))
@@ -64,7 +61,7 @@ public class DadosSemOptimizacaoActivity extends Activity {
             return;
         }
         if(ano_c<1981 || ano_c>year){
-            Toast.makeText(this, "Introduza um ano válido pfv", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Introduza um ano válido", Toast.LENGTH_SHORT).show();
             return;
         }
         try {
@@ -74,7 +71,7 @@ public class DadosSemOptimizacaoActivity extends Activity {
             return;
         }
         if(cilindrada_c<0){
-            Toast.makeText(this, "Introduza uma cilindrada válida pfv", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Introduza uma cilindrada válida", Toast.LENGTH_SHORT).show();
             return;
         }
         try {
@@ -84,7 +81,7 @@ public class DadosSemOptimizacaoActivity extends Activity {
             return;
         }
         if(co2_c<0){
-            Toast.makeText(this, "Introduza um valor de Co2 válido pfv", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Introduza um valor de Co2 válido", Toast.LENGTH_SHORT).show();
             return;
         }
         try {

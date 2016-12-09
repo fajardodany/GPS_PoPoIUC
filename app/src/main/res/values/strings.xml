@@ -12,5 +12,31 @@
         <item>Gásoleo</item>
         <item>GPL</item>
     </string-array>
+    <string-array name="TodasCilindradasGasolinaM2007">
+        <item>Até 1250 cm3</item>
+        <item>Mais de 1250 cm3 a 1750 cm3</item>
+        <item>Mais de 1750 cm3 a 2500 cm3</item>
+        <item>Mais de 2500 cm3</item>
+    </string-array>
+    <string-array name="TodasCilindradasGasolinam2007">
+        <item>Até 1000 cm3</item>
+        <item>Mais de 1000 cm3 a 1300 cm3</item>
+        <item>Mais de 1300 cm3 a 1750 cm3</item>
+        <item>Mais de 1750 cm3 a 2600 cm3</item>
+        <item>Mais de 2600 cm3 a 3500 cm3</item>
+        <item>Mais de 3500 cm3</item>
+    </string-array>
+    <string-array name="TodasEmissões">
+        <item>Até 120 g/km</item>
+        <item>Mais de 120 g/km a 180 g/km</item>
+        <item>Mais de 180 g/km a 250 g/km</item>
+        <item>Mais de 250 g/km</item>
+    </string-array>
+    <string-array name="TodasCilindradasGasoleom2007">
+        <item>Até 1500 cm3</item>
+        <item>Mais de 1500 cm3 a 2000 cm3</item>
+        <item>Mais de 2000 cm3 a 3000 cm3</item>
+        <item>Mais de 3000 cm3</item>
+    </string-array>
 
 </resources>

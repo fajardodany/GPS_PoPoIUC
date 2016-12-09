@@ -2,8 +2,8 @@ package pt.isec.a21240085.popoiuc;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import java.math.RoundingMode;
@@ -22,5 +22,10 @@ public class CalculaIUCActivity extends Activity {
         double calculo = i.getDoubleExtra("intResultado",5.0);
         resultadoFinal = (TextView) findViewById(R.id.textViewResultadoIUC);
         resultadoFinal.setText(df.format(calculo)+"€");
+    }
+
+    protected void onRecomecar(View v){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
