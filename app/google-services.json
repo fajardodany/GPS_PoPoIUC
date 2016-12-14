@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "774348779075",
+    "firebase_url": "https://bdpopoiuc.firebaseio.com",
+    "project_id": "bdpopoiuc",
+    "storage_bucket": "bdpopoiuc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774348779075:android:6d576410a0843abd",
+        "android_client_info": {
+          "package_name": "pt.isec.a21240085.popoiuc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774348779075-jhff9uogbe89i46ec4fbs71av3mvagrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3_UCgTzLWh6b-48FhE_fTWP95v_n9GMs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774348779075-jhff9uogbe89i46ec4fbs71av3mvagrd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

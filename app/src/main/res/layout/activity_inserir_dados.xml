@@ -26,17 +26,31 @@
                 android:layout_weight="1">
 
                 <TextView
-                    android:text="Ano"
+                    android:text="Marca"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:textSize="20dp"
-                    android:id="@+id/textViewAno"
+                    android:id="@+id/textViewMarca"
                     android:layout_weight="1"/>
 
                 <Spinner
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:id="@+id/spinnerAno"
+                    android:id="@+id/SpinerMarca"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:text="Modelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textSize="20dp"
+                    android:id="@+id/textViewModelo"
+                    android:layout_weight="1"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/SpinerModelo"
                     android:layout_weight="1"/>
 
                 <TextView
@@ -54,19 +68,17 @@
                     android:layout_weight="1"/>
 
                 <TextView
-                    android:text="Marca/Modelo"
+                    android:text="Ano"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:textSize="20dp"
-                    android:id="@+id/textViewMarcaModelo"
+                    android:id="@+id/textViewAno"
                     android:layout_weight="1"/>
 
-                <AutoCompleteTextView
-                    android:text=""
-                    android:textSize="14dp"
+                <Spinner
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:id="@+id/autoCompleteMarcaModelo"
+                    android:id="@+id/spinnerAno"
                     android:layout_weight="1"/>
 
                 <TextView

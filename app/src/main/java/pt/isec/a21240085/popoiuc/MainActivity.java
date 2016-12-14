@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
     }
 
     protected void onclicar(View v){
-        Intent intent = new Intent(this, DadosSemOptimizacaoActivity.class);
+        Intent intent = new Intent(this, InserirDadosActivity.class);
         startActivity(intent);
 
     }
