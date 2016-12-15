@@ -53,7 +53,10 @@ public class DadosSemOptimizacaoActivity extends Activity {
         }
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
-
+        if(ano.getText().toString().isEmpty()){
+            Toast.makeText(this, "Campo do ano encontra-se vazio", Toast.LENGTH_SHORT).show();
+            return;
+        }
         try {
             ano_c = Integer.parseInt(ano.getText().toString());
         } catch(NumberFormatException nfe) {
@@ -64,6 +67,10 @@ public class DadosSemOptimizacaoActivity extends Activity {
             Toast.makeText(this, "Introduza um ano válido", Toast.LENGTH_SHORT).show();
             return;
         }
+        if(cilindrada.getText().toString().isEmpty()){
+            Toast.makeText(this, "Campo da Cilindrada encontra-se vazio", Toast.LENGTH_SHORT).show();
+            return;
+        }
         try {
             cilindrada_c = Integer.parseInt(cilindrada.getText().toString());
         } catch(NumberFormatException nfe) {
@@ -72,6 +79,10 @@ public class DadosSemOptimizacaoActivity extends Activity {
         }
         if(cilindrada_c<0){
             Toast.makeText(this, "Introduza uma cilindrada válida", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(co2.getText().toString().isEmpty()){
+            Toast.makeText(this, "Campo do Co2 encontra-se vazio", Toast.LENGTH_SHORT).show();
             return;
         }
         try {
@@ -92,10 +103,6 @@ public class DadosSemOptimizacaoActivity extends Activity {
         }
 
         calculos.calcular();
-        //Toast.makeText(this, "Resultado: "+calculos.getResultado(), Toast.LENGTH_SHORT).show();
-
-
-
         Intent it = new Intent(this, CalculaIUCActivity.class);
         it.putExtra("intResultado", calculos.getResultado());
         startActivity(it);
